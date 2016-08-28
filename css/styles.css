@@ -1,0 +1,49 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#top {
+	background-color: black;
+	color: white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 10px;
+	margin: 0px;
+	width: 50%;
+}
+
+#navbar  {
+	background-color: black;
+	color: white;
+	text-align: right;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
+	margin: 0px;
+	width: 50%;
+}
+
+#footer {
+	bottom: 0px;
+}
+
+a.nav:link {
+	color:white;
+}
+a.nav:visited {
+	color: white;
+}
+a.nav:hover {
+	color:gray;
+}
+
+#about {
+	padding-top: 50px;
+}
+
+
+
+
+
