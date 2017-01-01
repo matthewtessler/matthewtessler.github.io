@@ -1,2 +1,2 @@
-<h1>Matthew Tessler - Portfolio Website at <a href="http://matthewtessler.com">matthewtessler.com</a></h1>
-<h2>Built with <a href="http://bulma.io">bulma.io.</a></h2>
+<h1>Matthew Tessler's Portfolio Website</h1>
+<p>Built with <a href="http://bulma.io">bulma.io.</a></p>
