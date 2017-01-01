@@ -1,0 +1,50 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+span {
+	margin: 1px;
+}
+.nav-item.is-brand {
+	font-size:20px;
+}
+.nav-right.nav-menu {
+	font-size:16px;
+}
+.box {
+	display:none;
+}
+#prof{
+	border-radius:50%;
+	border:2px solid;
+	background-color:#2C2827;
+}
+#bio-content, #bio-icons {
+	color:#301F18;
+}
+#about-button-down, #about-button-up, #work-button-down {
+	background-color:transparent;
+	color:white;
+}
+#home-button-up, #projects-button-down, #projects-button-up, #footer-button-down{
+	background-color:transparent;
+	color:black;
+}
+#margins_plz {
+	margin: auto;
+	width: 80%;
+}
+#noisli-box{
+	color:black;
+}
+#noisli-words{
+	color:#4D4D4D;
+}
+#arrows{
+	margin-right:7px;
+	margin-bottom:7px;
+	margin-top: 7px;
+}
+#section_header{
+	margin-left: 10px;
+	margin-top: 10px;
+}
