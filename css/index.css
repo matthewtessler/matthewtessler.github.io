@@ -1,0 +1,168 @@
+
+body { /* typeface is Ubuntu, main background color set, font color set */
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #263238;
+	color:white;
+}
+p { /* sets p font weight to 300 */
+	font-weight: 300;
+	font-size:16px;
+}
+h1, h2, h3, h4, h5, h6 { /* sets general font weights for headers to 400 */
+	font-weight: 400;
+}
+hr { /* sets default hr color as light blue */
+	border-color:#00d3ef;
+}
+#intro { /* positions intro at natural position for reading */
+	padding-top: 15%; 
+	padding-bottom: 20%;
+}
+#about, #work { /* inverted text and background for these sections */
+	background-color: #ececec;
+	color: #263238;
+}
+#about hr, #work hr { /* gray hr for inverted sections */
+	border-color: #666666;
+}
+#education hr, #mango_intern hr { /* dark blue hr */
+	border-color: #326fd3;
+}
+#skills hr, #python_tutor hr { /* purple hr */
+	border-color: #a65ed1;
+}
+#fanbridge_intern hr { /* red hr */
+	border-color:#f1385c;
+}
+#dd_wsn hr { /* light blue hr */
+	border-color: #00d3ef;
+}
+.navbar { /* sets navbar as transparent */
+	background-color: transparent;
+	background: transparent;
+	border-color:transparent;
+}
+.nav.navbar-nav.navbar-right li a { /* sets color of navbar-right links as white */
+	color: #ffffff;
+}
+a.navbar-brand, a { /* sets navbar-brand links as white, preps for hover animation */
+	color:#ffffff!important;
+	position:relative!important;
+	text-decoration: none!important;
+}
+a.navbar-brand:hover, .nav.navbar-nav.navbar-right li a:hover, a:hover { /* maintains hover color as white */
+	color:#ffffff;
+}
+button { /* removes default button border, for hamburger menu */
+	border-style:none!important;
+}
+button:hover { /* hover color for button is red */
+	background-color:#f1385c!important;
+}
+a.navbar-brand:before, .nav.navbar-nav.navbar-right li a:before, a:before { /* creates the animated underline */
+	content: "";
+	position:absolute;
+	width:100%;
+	height:2px;
+	bottom:0;
+	left:0;
+	background-color:#00d3ef; /* sets default underline color as light blue */
+	visibilty:hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+#about_nav:before, #top_nav:before, #bnyc_href:before { /* underline hover color is red */
+	background-color:#f1385c;
+}
+#projects_nav:before { /* underline hover color is dark blue */
+	background-color: #326fd3;
+}
+#work_nav:before { /* underline hover color is purple */
+	background-color: #a65ed1;
+}
+#noisli_href:before { /* light green underline */
+	background-color: #8DDBB5;
+}
+#cv_href:before { /* darker green underline */
+	background-color: #2fc9ad;
+}
+#bikenyc_href:before { /* lighter green underline */
+	background-color: #00ff67;
+}
+#linkedin_href:before { /* yellow underline */
+	background-color: #fedc62;
+}
+#github_href:before { /* white underline */
+	background-color: #ffffff;
+}
+#bootstrap_href:before { /* gray underline */
+	background-color: #b3b3b3;
+}
+a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:hover:before { /* more code for underline */
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.badge { /* sets badge characteristics, font and padding */
+	font-weight: 400;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin: 2px;
+}
+/* badge colors */
+.python {
+	background-color: #fedc62;
+	color: #4c421d;
+}
+.java {
+	background-color: #326fd3;
+	color: white;
+}
+.js {
+	background-color: #343434;
+	color: white;
+}
+.c {
+	background-color: #f1385c;
+	color: white;
+}
+.tools {
+	background-color: white;
+	color: #343434;
+}
+.ux {
+	background-color: #38c864;
+	color: white;
+}
+.misc {
+	background-color: #2fc9ad;
+	color: white;
+}
+#bikenyc.panel { /* sets color, margin and padding for projects panel for bike nyc */
+	margin: 20px;
+	background-color: #326fd3;
+	padding: 20px;
+}
+#noisli.panel { /* sets color, margin and padding for projects panel for noisli 2.0 */
+	margin:20px;
+	background-color:#ececec;
+	padding:20px;
+	color:black;
+}
+#noisli a { /* noisli panel links are gray */
+	color:#666666!important;
+}
+#bikenyc a, #footer a { /* bike nyc panel links, footer links are lighter gray */ 
+	color:#b3b3b3!important;
+}
+#about.container-fluid, #projects.container-fluid, #work.container-fluid { /* padding for main sections */
+	padding: 5%;
+}
+#footer.container-fluid { /* padding for footer */
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
