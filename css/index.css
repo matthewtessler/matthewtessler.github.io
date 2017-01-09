@@ -76,7 +76,7 @@ a.navbar-brand:before, .nav.navbar-nav.navbar-right li a:before, a:before { /* c
 #about_nav:before, #top_nav:before, #bnyc_href:before { /* underline hover color is red */
 	background-color:#f1385c;
 }
-#projects_nav:before { /* underline hover color is dark blue */
+#projects_nav:before, #os_lab4_href:before { /* underline hover color is dark blue */
 	background-color: #326fd3;
 }
 #work_nav:before { /* underline hover color is purple */
@@ -143,20 +143,29 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 	color: white;
 }
 #bikenyc.panel { /* sets color, margin and padding for projects panel for bike nyc */
-	margin: 20px;
-	background-color: #326fd3;
+	margin:15px;
+	background-color:#326fd3;
 	padding: 20px;
 }
+#os_lab4.panel {
+	margin:15px;
+	background-color:#343434;
+	padding:20px;
+}
 #noisli.panel { /* sets color, margin and padding for projects panel for noisli 2.0 */
-	margin:20px;
+	margin:15px;
 	background-color:#ececec;
 	padding:20px;
 	color:black;
 }
+#project_thumbnails {
+	height:48px;
+	width:48px;
+}
 #noisli a { /* noisli panel links are gray */
 	color:#666666!important;
 }
-#bikenyc a, #footer a { /* bike nyc panel links, footer links are lighter gray */ 
+#bikenyc a, #os_lab4 a, #footer a { /* bike nyc panel links, footer links are lighter gray */ 
 	color:#b3b3b3!important;
 }
 #about.container-fluid, #projects.container-fluid, #work.container-fluid { /* padding for main sections */
@@ -165,4 +174,10 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 #footer.container-fluid { /* padding for footer */
 	padding-top: 2%;
 	padding-bottom: 1%;
+}
+#footer_image {
+	width:100px;
+	height:100px;
+	border-style:solid;
+	border-width:1px;
 }
