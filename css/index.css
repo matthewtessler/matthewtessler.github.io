@@ -155,6 +155,11 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 	background-color:#326fd3;
 	padding: 20px;
 }
+#nyu_classrooms.panel { /* sets color, margin and padding for projects panel for nyu classrooms */
+	margin: 15px;
+	background-color:#A5CDFF;
+	padding: 20px;
+}
 #os_lab4.panel {
 	margin:15px;
 	background-color:#343434;
