@@ -126,9 +126,17 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 	background-color: #343434;
 	color: white;
 }
+.swift {
+	background-color: #ED6E3B;
+	color:white;
+}
 .c {
 	background-color: #f1385c;
 	color: white;
+}
+.objc {
+	background-color:#CC6289;
+	color:white;
 }
 .tools {
 	background-color: white;
