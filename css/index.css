@@ -160,20 +160,19 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 }
 #nyu_classrooms.panel { /* sets color, margin and padding for projects panel for nyu classrooms */
 	margin: 15px;
-	background-color:#A5CDFF;
+	background-color:#D2EDFE;
 	padding: 20px;
-	color:#666666;
+	color:#343434;
 }
 #os_lab4.panel {
 	margin:15px;
-	background-color:#343434;
+	background-color:#262626;
 	padding:20px;
 }
 #noisli.panel { /* sets color, margin and padding for projects panel for noisli 2.0 */
 	margin:15px;
-	background-color:#ececec;
+	background-color:#3F3968;
 	padding:20px;
-	color:black;
 }
 #project_thumbnails {
 	height:60px;
@@ -182,10 +181,7 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 #nyu_classrooms a {
 	color:#666666!important;
 }
-#noisli a { /* noisli panel links are gray */
-	color:#666666!important;
-}
-#bikenyc a, #os_lab4 a, #footer a { /* bike nyc panel links, footer links are lighter gray */ 
+#bikenyc a, #noisli a, #os_lab4 a, #footer a { /* bike nyc panel links, footer links are lighter gray */ 
 	color:#b3b3b3!important;
 }
 #about.container-fluid, #projects.container-fluid, #work.container-fluid { /* padding for main sections */
