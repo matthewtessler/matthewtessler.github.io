@@ -100,6 +100,9 @@ a.navbar-brand:before, .nav.navbar-nav.navbar-right li a:before, a:before { /* c
 #bootstrap_href:before { /* gray underline */
 	background-color: #b3b3b3;
 }
+#nyu_classrooms_href:before { /*orange underline */
+	background-color: #ED6E3B;
+}
 a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:hover:before { /* more code for underline */
 	visibility: visible;
 	-webkit-transform: scaleX(1);
@@ -159,6 +162,7 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 	margin: 15px;
 	background-color:#A5CDFF;
 	padding: 20px;
+	color:#666666;
 }
 #os_lab4.panel {
 	margin:15px;
@@ -172,8 +176,11 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 	color:black;
 }
 #project_thumbnails {
-	height:48px;
-	width:48px;
+	height:60px;
+	width:60px;
+}
+#nyu_classrooms a {
+	color:#666666!important;
 }
 #noisli a { /* noisli panel links are gray */
 	color:#666666!important;
