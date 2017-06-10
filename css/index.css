@@ -103,6 +103,9 @@ a.navbar-brand:before, .nav.navbar-nav.navbar-right li a:before, a:before { /* c
 #nyu_classrooms_href:before { /*orange underline */
 	background-color: #ED6E3B;
 }
+#python_ws_href:before {
+	background-color: #fedc62; /* yellow underline */
+}
 a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:hover:before { /* more code for underline */
 	visibility: visible;
 	-webkit-transform: scaleX(1);
@@ -163,6 +166,11 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 	background-color:#D2EDFE;
 	padding: 20px;
 	color:#343434;
+}
+#python_ws.panel { /* sets color, margin and padding for projects panel for python web scraper */
+	margin:15px;
+	background-color: black;
+	padding: 20px;
 }
 #os_lab4.panel {
 	margin:15px;
