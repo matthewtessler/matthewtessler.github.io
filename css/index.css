@@ -15,7 +15,7 @@ hr { /* sets default hr color as light blue */
 	border-color:#00d3ef;
 }
 #intro { /* positions intro at natural position for reading */
-	padding-top: 15%; 
+	padding-top: 15%;
 	padding-bottom: 20%;
 }
 #about, #work { /* inverted text and background for these sections */
@@ -81,6 +81,9 @@ a.navbar-brand:before, .nav.navbar-nav.navbar-right li a:before, a:before { /* c
 }
 #work_nav:before { /* underline hover color is purple */
 	background-color: #a65ed1;
+}
+#write_nav:before {
+	background-color: #FFFFFF;
 }
 #noisli_href:before { /* light green underline */
 	background-color: #8DDBB5;
@@ -189,7 +192,7 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 #nyu_classrooms a {
 	color:#666666!important;
 }
-#bikenyc a, #noisli a, #os_lab4 a, #footer a { /* bike nyc panel links, footer links are lighter gray */ 
+#bikenyc a, #noisli a, #os_lab4 a, #footer a { /* bike nyc panel links, footer links are lighter gray */
 	color:#b3b3b3!important;
 }
 #about.container-fluid, #projects.container-fluid, #work.container-fluid { /* padding for main sections */
