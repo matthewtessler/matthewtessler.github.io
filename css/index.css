@@ -109,6 +109,10 @@ a.navbar-brand:before, .nav.navbar-nav.navbar-right li a:before, a:before { /* c
 #python_ws_href:before {
 	background-color: #fedc62; /* yellow underline */
 }
+
+#spotify_af_href:before {
+	background-color:#32CD65; /* spotify green underline */
+}
 a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:hover:before { /* more code for underline */
 	visibility: visible;
 	-webkit-transform: scaleX(1);
@@ -162,6 +166,11 @@ a.navbar-brand:hover:before, .nav.navbar-nav.navbar-right li a:hover:before, a:h
 #bikenyc.panel { /* sets color, margin and padding for projects panel for bike nyc */
 	margin:15px;
 	background-color:#326fd3;
+	padding: 20px;
+}
+#spotify_af.panel {
+	margin:15px;
+	background-color:#191414;
 	padding: 20px;
 }
 #nyu_classrooms.panel { /* sets color, margin and padding for projects panel for nyu classrooms */
