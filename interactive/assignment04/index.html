@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../p5/p5.min.js"></script>
+    <script src="../p5/addons/p5.dom.min.js"></script>
+    <script src="../p5/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <style> body {padding: 0; margin: 0;} </style>
+  </head>
+  <body>
+    	<div>My implementation of Whack-A-Mole is fairly simple. I created a Mole class which has a display() class that fires the other functions required for each iteration of draw(). Whenver display() fires, update() and checkHit() also fire. The update() function will regulate the randomness of the function by counting down from a randomly chosen number and then choosing another number, and checkHit() will check if a mole was whacked. I've replaced the cursor with an image of a hammer, and the moles are a simple .png image. The moles will be visible and not visible for some amount of time between 0 and 3 seconds each.</div>
+  </body>
+</html>
