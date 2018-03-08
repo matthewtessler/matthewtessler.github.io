@@ -3,6 +3,11 @@ var diff; // 0 - easy, 1 - medium, 2 - hard
 var points; // score-keeping
 var count; // what num of keys being played in sequence
 var playListenBuild; // 0 - play, 1 - listen , 2 - build
+var keys;
+
+function getRandomInteger(min, max) { // random integer function from W3Schools.com
+	return Math.floor(Math.random() * (max - min + 1) ) + min; // both inclusive
+}
 
 function setup() {
 	createCanvas(500,500); // create canvas
@@ -11,11 +16,13 @@ function setup() {
 	diff = -1; // diff starts as -1, "not chosen"
 	points = 0; // user starts at 0 points
 	count = 1; // one key to repeat at first
-	playListenBuild = 2; 
+	playListenBuild = 2; // start in build mode (have to make the stack of keys)
+	keys = []; // start off with an empty stack
 }
 
 function draw() {
 	if (state) { // play
+		console.log("hello!");
 		background(0) // bg black
 		fill(255); // text white
 
@@ -52,6 +59,12 @@ function draw() {
 		}
 		else if (playListenBuild === 2) { // build set of keys
 			text("Building . . .", 25, 25);
+			// build stack with *count* number of keys randomly chosen
+			for (var i = 0 ; i < count; i++) {
+				keys.push(getRandomInteger(65,68));
+			}
+			console.log(keys);
+			playListenBuild = 0; // once done building, switch to play mode
 
 			// populate a stack with randomly chosen keys 
 			// the keys that can be possibly chosen depends on diff level
