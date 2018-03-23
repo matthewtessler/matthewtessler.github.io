@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Midterm Project Update</title>
+
+		<!-- Bootstrap -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Ubuntu+Mono">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	    <link rel="stylesheet" href="../css/index.css">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+					<h1>Midterm Project Documentation - SimonKeys</h1>
+					<h3><a href="../midterm-project/index.html">link to the game</a></h3>
+					<p>SimonKeys is a memorization game I created based off the popular electronic game of memory skill, <a href="https://en.wikipedia.org/wiki/Simon_(game)">Simon</a>, which was released in 1978. It was popular throughout the 20th century, early 21st century, and is still sold today with the same basic concept.</p>
+					<br>
+					<p>The original game involved a physical interface of four buttons (red, green, blue, and yellow) and pressing them in a specified order. Each colored button also had a sound associated with it, which assisted in the process of repetition and memorization. The object of the game was to see how many times the player could repeat back the colors before they couldn’t memorize them any longer. Linked is a <a href="https://www.henrybear.com/components/com_virtuemart/shop_image/product/full/tgtgho16189758c2dc4d3537b.jpg">picture</a> of the game, as well as a <a href="https://www.youtube.com/watch?v=1Yqj76Q4jJ4">video</a> of the game being played. </p>
+					<br>
+					<p>The game I was successful in building is based off of the same sequence-based memorization with the assist of tones, except instead of having four colored-buttons, the keyboard is used. There are three levels of difficulty: Easy, Medium, and Hard. Easy has four keys (A through D) from which to choose, Medium has fourteen keys (A through N) and Hard has all letters of the alphabet (A through Z). Each key has a different tone associated with it.</p>
+					<br>
+					<p>
+					The sequence of the game goes like this:
+					<ol>
+		              <li>Choose a level of difficult</li>
+		              <li>Sequence is played back (e.g. A, Y, U, K)</li>
+		              <li>
+		                User attempts to relay the sequence back
+		                <ul>
+		                  <li>If they fail, the game starts over and they can choose a new level of difficulty</li>
+		                  <li>If they succeed, the game continues with one more key to memorize</li>
+		                </ul>
+              		</li>
+            		</ol>
+            		</p>
+            		<br>
+            		<p>The user can pause at any time. The difficulty setting is frozen, if they want to choose a new level of difficulty they must reset.</p>
+            		<br>
+            		<p>
+						The game is written purely in P5, with no functionality in the HTML. It’s also completely with the keys, the mouse is not used. It’s a simple concept for a game that required rigid structure to ensure that all key presses (the only form of communication with the game) had the intended effect only when they were allowed by the logic of the game. To create this rigid structure I relied heavily on the concept of state, as well as the keyPressed() function. In the draw() funciton there are two main states, play and pause. The game starts in pause mode, and this is where the player chooses the level of difficulty and given instructions about the game. The space bar is uesd to toggle between the two modes. In play mode, there are four states: Play, Listen, Build, and Inform. Build comes first. This is where the game internally adds to a stack of keys that the player will be expected to repeat back. After Build comes Play, in which the game pops the keys up briefly on the screen along with playing their sound. Then comes Listen, where the game listens and the player is expected to repeat back the keys. The keyPressed() function listens. After that comes Inform, in which the user is told whether they won or lost. After that the state goes back to Build. If they won the last set, a new key will be added to the stack and they’ll go through the keys plus one more. If they lost, the stack will reset with one key. the random() function chooses between the keys. There are four, fourteen, or twenty-six keys from which to choose. For scorekeeping, a user will get points each time they get a sequence correct. Each round the user gets the number of possible keys times the number of keys done correctly (if they’re done correctly). 
+					</p>
+					<br>
+					<p>For the tones I used the built-in P5 sound library with the sine oscillator. Each key just has a different tone in order on the keyboard. A is a C note. To time everything correctly, I used the P5 millis() functionality to make everything go at human speed. I intended for this to be a completely technical project, as design and graphics are not my expertise. All development was done with black, white, and gray colors and no pictures. To make it look enticing for the user, however, at the end I switched in external artwork done by Melissa Lopez. The background and letters are all created by her. Check out the game to see the fun graphics! </p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
