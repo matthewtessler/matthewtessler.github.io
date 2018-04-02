@@ -172,7 +172,6 @@ function keyPressed() {
 	else if (state && playListenBuildInform === 1) { // listening for key press response
 		text(String.fromCharCode(keyCode), 25, 75);
 		osc.freq(midiToFreq(keyCode-5)); // change frequency to match key
-		console.log("hello");
 
 		// makes sure osc only starts once so no repetitive sound
 		if (!startOsc) { 
