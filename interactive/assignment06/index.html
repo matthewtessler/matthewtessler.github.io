@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+		<script language="javascript" type="text/javascript" src="../libraries/aframe.min.js"></script>
+		<script language="javascript" type="text/javascript" src="../libraries/aframep5.js"></script>
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+		<script src="../p5/addons/p5.sound.min.js"></script>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+	    <a-scene id="VRScene">
+			<a-assets id="VRAssets">
+				<a-asset id="sun" src="images/sun.jpg"></a-asset>
+				<a-asset id="balloon_obj" src="images/balloon.obj"></a-asset>
+				<a-asset id="balloon_mtl" src="images/balloon.mtl"></a-asset>
+			</a-assets> 
+			<a-sky id="theSky" color="rgb(135,206,235)"></a-sky>
+	    </a-scene>
+	</body>
+</html>
