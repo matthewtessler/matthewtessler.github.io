@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- p5.js libraries -->
+  <script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="../libraries/p5.dom.min.js"></script>
+
+  <!-- clmtracker libraries -->
+  <script src="../ext_js/utils.js"></script>
+  <script src="../ext_js/jsfeat-min.js"></script>
+  <script src="../ext_js/frontalface.js"></script>
+  <script src="../ext_js/jsfeat_detect.js"></script>
+  <script src="../ext_js/numeric-1.2.6.min.js"></script>
+  <script src="../ext_js/mosse.js"></script>
+  <script src="../ext_js/left_eye_filter.js"></script>
+  <script src="../ext_js/right_eye_filter.js"></script>
+  <script src="../ext_js/nose_filter.js"></script>
+  <script src="../models/model_pca_20_svm.js"></script>
+  <script src="../js/clm.js"></script>
+  <script src="../js/svmfilter_webgl.js"></script>
+  <script src="../js/svmfilter_fft.js"></script>
+  <script src="../js/mossefilter.js"></script>
+  <script src="../ext_js/Stats.js"></script>
+
+  <!-- craig's API for accessing the clmtracker library via p5 -->
+  <script language="javascript" type="text/javascript" src="../libraries/ck_p5_clmtracker.js"></script>
+
+  <!-- our sketch file! -->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+</head>
+
+<body>
+<p>My program is called "The Particles That Prefer Mouths Closed." The program uses facial tracking to determine whether –if there is a face in frame– that the face's mouth is open. If the mouth is not open, the painting of Starry Night will stay in place. If the face mouth opens (if the person in frame opens their mouth) then the particles will scatter! However, once the person closes their mouth again, they will scram back to their original place. I built this using two concepts from our AR lessons. The first was the facial tracking and mouth tracking of the "rainbow vomit" example. The second was the "tiling with objects" example of the Mona Lisa. I combined those to make it so a user effectively controls the particles with their mouth. It doesn't use any sound, but if the user wants they can yell at the painting and the particles will scram. Of course, there is no sound detection, but if the user yells with their mouth open then it'll seem like the particles are scared by the yelling. But, that's just a fun incidental idea, the main part is the face tracking and particle system implementation. Enjoy!</p>
+</body>
+</html>
