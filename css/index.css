@@ -1,20 +1,21 @@
 h1,h2,h3,h4,h5,h6 {
-  color:#353535;
-  font-family: 'Ubuntu', sans-serif;
+  color:#60B8FF;
+  font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
+  color:#676767;
 }
 
 code {
-  color:#212121;
-  background-color:#CDF2FC;
-  font-family: 'Ubuntu Mono', monospace;
+  color:#959595;
+  background-color: white;
+  font-family: 'Roboto Mono', monospace;
 }
 
 a {
-  color:#FF6464;
+  color:#60B8FF;
 }
 
 .container {
@@ -22,7 +23,7 @@ a {
 }
 
 .footer a {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
 }
 
 .footer {
